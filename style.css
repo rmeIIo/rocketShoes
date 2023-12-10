@@ -1,99 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, Helvetica, sans-serif;
-}
-
 :root {
     --button: #FF0000;
-    --main-background: #c4c4c4;
+    --main-background:  #C4C4C4;
     --background: #E5E5E5;
     --text: #000;
     --footer: #000;
     --text-description: #9C9696;
 }
 
-header {
-    position: fixed;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-nav {
-    width: 100%;
+body {
+    background: var(--background);
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+#navbarContainer {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    left: 5%; 
+}
+
+#navbar {
     display: flex;
-    margin-top: 39px;
-    margin-left: 60px;
-    margin-right: 60px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-    width: 52px;
+#navbarList {
+    display: flex;
+    list-style: none;
 }
 
-.nav-item {
-    margin-left: 90px;
+.navbarItem {
+    margin-right: 90px;
+    text-transform: uppercase;
+}
+
+.navbarItem a {
     text-decoration: none;
+    color: var(--text);
+    font-size: 1em;
     font-weight: 700;
-    margin-top: 10px;
-    color: var(--text)
 }
 
-.form {
-    margin-left: 82px;
-    width: 220px;
-    height: 45px;
+#navbarSearch {
     background: #fff;
     display: flex;
+    justify-content: center;
+    padding: 5px;
 }
 
-.form button {
+#navbarSearch button {
     background: none;
     border: none;
-    width: 24px;
-    margin-left: 13px;
-    margin-top: 13px;
-    margin-bottom: 13px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
-.form input {
+#navbarSearch input {
     background: none;
     border: none;
-    background: none;
-    margin-top: 16px;
-    margin-left: 10px;
 }
 
-.form input::placeholder {
+#navbarSearch input:focus {
+    border: none;
+    background: none;
+}
+
+/*ASIDE*/
+#aside {
+    margin-left: 5%;
+}
+
+#aside h1 {
+    font-size: 3em;
+}
+
+#aside p {
+    font-size: 1em;
     color: var(--text-description);
 }
 
-.search {
-    
+#aside h2 {
+    font-size: 2em;
 }
 
-.bag {
-    margin-left: 80px;
-    width: 34px;
-    margin-top: 8px;
-
+#aside h1, #aside p, #aside h2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 
-aside {
+#aside button {
+    width: 15vw;
+    min-height: 10vh;
+    margin-left: 10%;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--button);
+    border: none;
+    cursor: pointer;
+}
+
+/*MAIN*/   
+#mainContainer {
     display: flex;
-    background: var(--background);
-    height: 100%;
-    width: 300px;
-
+    align-items: center;
 }
 
-main {
-    display: inline-block;
+#main {
+    min-width: 65%;
+    min-height: 100vh;
     background: var(--main-background);
-    margin-left: 301px;
-}
-
-.preco {
-    margin-top: 190px;
 }

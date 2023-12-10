@@ -3,59 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="style.css">
 
     <title>RocketShoes</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="#"><img class="logo" src="./assets/favicon.ico" alt="RocketShoes"></a>
-            <a class="nav-item" href="#">HOMEM</a>
-            <a class="nav-item" href="#">MULHER</a>
-            <a class="nav-item" href="#">CRIANÇA</a>
-            <a class="nav-item" href="#">CUSTOMIZAR</a>
-            <form class="form" action="">
-                <button><img src="./assets/icon-search.svg" alt=""></button>
-                <div>
-                    <input class="search" placeholder="Pesquisar" type="text">
+    <div id="container">
+        <header id="navbarContainer">
+            <nav id="navbar">
+                <div id="navbarLogo">
+                    <a href="#"><img src="./assets/logo.svg" alt="logo RocketShoes"></a>
                 </div>
-            </form>
-            <a class="bag" href=""><img src="./assets/icon-bag.svg" alt=""></a>
-        </nav>
-    </header>
-
-    <aside>
-        <section class="preco">
-            <h1>Tênis Esportivo Para Corrida Top</h1>
-            <p>Este tênis tem o intuito de te deixar ainda mais fitness, focado e musculoso.</p>
-        </section>
-    </aside>
-
-    <main>
-        <section class="img-principal">
-            <img src="./assets/tenis-1-ampliado.png" alt="">
-        </section>
-
-        <section class="gallery">
-            <div>
-                <img src="./assets/tenis-1-galeria.png" alt="">
-            </div>
-
-            <div>
-                <img src="./assets/tenis-2-galeria.png" alt="">
-            </div>
-
-            <div>
-                <img src="./assets/tenis-3-galeria.png" alt="">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        
-    </footer>
     
+                <ul id="navbarList">
+                    <li class="navbarItem"><a href="#">Homem</a></li>
+                    <li class="navbarItem"><a href="#">Mulher</a></li>
+                    <li class="navbarItem"><a href="#">Criança</a></li>
+                    <li class="navbarItem"><a href="#">Customizar</a></li>
+                </ul>
+                
+                <form id="navbarSearch">
+                    <button><img src="./assets/icon-search.svg" alt=""></button>
+                    <input placeholder="Pesquisar" type="text">
+                </form>
+    
+                <a id="navbarBag" href="#"><img src="./assets/icon-bag.svg" alt=""></a>
+            </nav>
+        </header>
+
+        <div id="mainContainer">
+            <aside id="aside">
+                <h1>Tênis Esportivo Para Corrida Top</h1>
+                <p>Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e musculoso.
+                </p>
+                <h2>R$1.000,00</h2>
+
+                <button>Comprar</button>
+            </aside>
+
+            <main id="main">
+
+            </main>
+        </div>
+    </div>
 </body>
 </html>
